@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+sqlalchemy
+git+https://github.com/ageitgey/face_recognition_models
+face-recognition
+opencv-python
+python-multipart
