@@ -18,8 +18,8 @@ This project consists of a **Face Detection Backend** (FastAPI) and **Frontend**
 Clone the repository to your local machine:
 
 ```bash
-git clone <repository_url>
-cd <project_folder>
+git clone https://github.com/dalbeersinghtoor/face-detection-demo
+cd face-detection-demo
 ```
 
 ---
@@ -103,28 +103,4 @@ The project uses **Docker Compose** to orchestrate both the frontend and backend
 3. **Backend** will be available at: `http://localhost:8000`
 
 
-
----
-
-### **5. Troubleshooting**
-
-- **CORS Error**: Ensure that the frontend is correctly configured to communicate with the backend by allowing CORS in the backend. This is already handled in the backend FastAPI configuration.
-- **Module Errors**: Make sure that all dependencies are correctly installed by rebuilding the Docker images: 
-  ```bash
-  docker-compose up --build
-  ```
-
----
-
-
-
-### **6. Production Deployment**
-
-In production, you can build the Next.js app by running:
-
-```bash
-docker-compose -f docker-compose.prod.yml up --build
-```
-
-**Note**: This assumes you have a production-ready Docker Compose file. You can use `next build` to create a production build and run it with `next start` in a production-ready container.
 
